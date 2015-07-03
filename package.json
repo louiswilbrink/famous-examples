@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "browserify": "^10.2.4",
-    "famous": "^0.6.2",
+    "famous": "file:../../../../../var/folders/hn/7f38h2c95b3bb8nh0y17wnjw0000gn/T/npm-14537-f10c1665/git-cache-ece4872250fa/f2e731891601e689726d8492e713b5b55051b835",
     "node-libs-browser": "^0.5.2",
     "watchify": "^3.2.3",
     "webpack": "^1.10.1"

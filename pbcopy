@@ -1,0 +1,25 @@
+'use strict';
+
+var famous = require('famous');
+var DOMElement = famous.domRenderables.DOMElement;
+var Size = famous.core.Size;
+var FamousEngine = famous.core.FamousEngine;
+var Node = famous.core.Node;
+
+// Create scene.
+var scene = FamousEngine.createScene();
+
+var boxNode = scene.addChild();
+
+var boxElement = new DOMElement(box);
+boxElement.setProperty('background-color', 'lightgray');
+
+var boxSize = new Size(boxNode);
+
+boxSize.setSizeMode('absolute', 'absolute')
+    .setAbsolute(500, 500);
+
+//box.setSizeMode('absolute', 'absolute')
+    //.setAbsoluteSize(500, 500);
+
+FamousEngine.init();
