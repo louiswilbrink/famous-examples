@@ -2,7 +2,7 @@
 
 var famous = require('famous');
 var DOMElement = famous.domRenderables.DOMElement;
-var Size = famous.core.Size;
+var Size = famous.components.Size;
 var FamousEngine = famous.core.FamousEngine;
 var Node = famous.core.Node;
 
@@ -12,10 +12,11 @@ var scene = FamousEngine.createScene();
 var boxNode = scene.addChild();
 var boxSize = new Size(boxNode);
 
-boxNode.setSizeMode('absolute', 'absolute')
-    .setAbsoluteSize(300, 300);
-
 var boxElement = new DOMElement(boxNode);
 boxElement.setProperty('background-color', 'lightgray');
+
+var boxSize = new Size(boxNode);
+boxSize.setMode('absolute', 'absolute')
+    .setAbsolute(300, 250);
 
 FamousEngine.init();
